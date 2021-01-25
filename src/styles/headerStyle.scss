@@ -1,0 +1,57 @@
+header{
+    width: 100%;
+    height: $height;
+    margin: $margin;
+    nav{
+        width: $width;
+        height: $height;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: $GrayishViolet;
+        font-weight: 700;
+        .flex-left{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .logoHam-wrapper{
+                margin-right: 20px;
+                .hamMenuWrapper{
+                    display: none;
+                    .hamMenu{
+                        width: 40px;
+                        cursor: $pointer;
+                    }
+                }
+            }
+            .items .item{
+                float: left;
+                margin: auto 20px;
+                &:hover{
+                    cursor: $pointer;
+                    color: $VeryDarkViolet;
+                }
+            }
+        }
+        .logSign-wrapper{
+            .login{
+                margin-right: 30px;
+                &:hover{
+                    color: $VeryDarkViolet;
+                    cursor: $pointer;
+                }
+            }
+            .sign-up{
+                background-color: $Cyan;
+                border-radius: 40px;
+                color: #FFF;
+                padding: 8px 25px;
+                &:hover{
+                    cursor: $pointer;
+                    background-color: lighten($Cyan, 30);
+                }
+            }
+        }
+    }
+}
