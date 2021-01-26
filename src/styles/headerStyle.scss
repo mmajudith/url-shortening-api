@@ -1,10 +1,10 @@
 header{
     width: 100%;
-    height: $height;
-    margin: $margin;
+    height: $hundred;
+    margin: $auto;
     nav{
-        width: $width;
-        height: $height;
+        width: $ninety;
+        height: $hundred;
         margin: 40px auto;
         display: flex;
         flex-direction: row;
@@ -51,6 +51,49 @@ header{
                     cursor: $pointer;
                     background-color: lighten($Cyan, 30);
                 }
+            }
+        }
+    }
+
+    .heading-wrapper{
+        width: $ninety;
+        height: $hundred;
+        margin: 70px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .heading{
+            width: 50%;
+            height: 100%;
+            margin-top: 6%;
+            h1{
+                color: $VeryDarkViolet;
+                font-size: 50px;
+                width: 85%;
+                line-height: 55px;
+            }
+            p{
+                width: 75%;
+            }
+            .get-started{
+                margin-top: 30px;
+                span{
+                    background-color: $Cyan;
+                    border-radius: 40px;
+                    color: #FFF;
+                    padding: 8px 25px;
+                    &:hover{
+                        cursor: $pointer;
+                        background-color: lighten($Cyan, 30);
+                    } 
+                }
+            }
+        }
+        .work-illust-wrapper{
+            width: 50%;
+            margin-right: -17%;
+            .illust{
+                width: 100%;
             }
         }
     }

@@ -1,0 +1,27 @@
+.boost-wrapper{
+    width: 100%;
+    height: $hundred;
+    margin: $auto;
+    height: 170px;
+    margin-top: 100px;
+    background: url(../../images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $VeryDarkBlue;
+    text-align: center;
+    h3{
+        color: #FFF;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    span{
+        background-color: $Cyan;
+        border-radius: 40px;
+        color: #FFF;
+        padding: 8px 25px;
+        &:hover{
+            cursor: $pointer;
+            background-color: lighten($Cyan, 30);
+        }
+    }
+}

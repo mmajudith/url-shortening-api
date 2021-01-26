@@ -2,10 +2,17 @@ import React from 'react'
 
 function ShortenForm() {
   return (
-    <div>
+    <div className="form-wrapper">
       <form>
-        <input type="text" placeholder="shorten a link here..."/>
-        <button type="submit">Shorten It!</button>
+        <div className="inputBut-wrapper">
+          <div className="input-wrapper">
+            <input type="text" placeholder="shorten a link here..."/>
+            <p>please add a link</p>
+          </div>
+          <div className="button-wrapper">
+            <button type="submit">Shorten It!</button>
+          </div>
+        </div>
       </form>
     </div>
   )

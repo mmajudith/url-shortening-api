@@ -5,7 +5,7 @@ import BoostLink from './BoostLink'
 
 function MainBody() {
   return (
-    <div>
+    <div className="main-body">
 
       <ShortenForm />
       <TrackLink />
