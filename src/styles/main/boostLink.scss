@@ -1,6 +1,5 @@
 .boost-wrapper{
     width: 100%;
-    height: $hundred;
     margin: $auto;
     height: 170px;
     margin-top: 100px;
@@ -8,20 +7,43 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $VeryDarkBlue;
-    text-align: center;
-    h3{
-        color: #FFF;
-        font-size: 40px;
-        margin-bottom: 20px;
+    .center{
+        width: 90%;
+        height: 100%;
+        margin: auto auto;
+        padding-top: 25px;
+        text-align: center;
+        h3{
+            color: #FFF;
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        span{
+            background-color: $Cyan;
+            border-radius: 40px;
+            color: #FFF;
+            padding: 8px 25px;
+            &:hover{
+                cursor: pointer;
+                background-color: lighten($Cyan, 30);
+            }
+        }
     }
-    span{
-        background-color: $Cyan;
-        border-radius: 40px;
-        color: #FFF;
-        padding: 8px 25px;
-        &:hover{
-            cursor: $pointer;
-            background-color: lighten($Cyan, 30);
+}
+
+@include mQ(768px){
+    .boost-wrapper{
+        .center{
+            h3{
+                font-size: 25px;
+            }
+            span{
+                background-color: $Cyan;
+                border-radius: 40px;
+                color: #FFF;
+                padding: 8px 30px;
+            }
         }
     }
 }

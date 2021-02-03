@@ -9,13 +9,13 @@ function Footer() {
   return (
     <footer>
 
-      <div>
+      <div className="footer-wrapper">
 
         <div className="footer-logo-wrapper">
           <img src={WhiteLogo} alt="footer logo" />
         </div>
 
-        <div>
+        <div className="features">
           <p>Features</p>
           <ul>
             <li>Link Shortening</li>
@@ -24,7 +24,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="resources">
           <p>Resources</p>
           <ul>
             <li>Blog</li>
@@ -33,7 +33,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="company">
           <p>Company</p>
           <ul>
             <li>About</li>
@@ -43,11 +43,11 @@ function Footer() {
           </ul>
         </div>
 
-        <div>
-          <img src={Facebook} alt="facebook icon"/>
-          <img src={Twitter} alt="twitter icon"/>
-          <img src={Pinterest} alt="pinterest icon"/>
-          <img src={Instagram} alt="instagram icon"/>
+        <div className="icons-wrapper">
+          <img src={Facebook} alt="facebook icon" className="icon"/>
+          <img src={Twitter} alt="twitter icon" className="icon"/>
+          <img src={Pinterest} alt="pinterest icon" className="icon"/>
+          <img src={Instagram} alt="instagram icon" className="icon"/>
         </div>
 
       </div>

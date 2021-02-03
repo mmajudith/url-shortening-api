@@ -16,7 +16,8 @@
         .inputBut-wrapper{
             width: 90%;
             height: $hundred;
-            margin: $auto;display: flex;
+            margin: $auto;
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
             .input-wrapper{
@@ -37,10 +38,13 @@
                     margin-top: 5px;
                     color: crimson;
                     display: none;
+                    letter-spacing: 2px;
+                    font-style: italic;
                 }
             }
             .button-wrapper{
                 width: 20%;
+                // margin-top: 4%;
                 margin-top: auto;
                 margin-bottom: auto;
                 button{
@@ -55,6 +59,38 @@
                     &:hover{
                         cursor: $pointer;
                         background-color: lighten($Cyan, 30);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mQ(768px){
+    .form-wrapper{
+        form{
+            .inputBut-wrapper{
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                .input-wrapper{
+                    width: 90%;
+                    margin: auto auto;
+                    input{
+                        width: 95%;
+                        padding-left: 5%;
+                        font-size: 14px;
+                    }
+                    p{
+                        text-align: left;
+                    }
+                }
+                .button-wrapper{
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 0%;
+                    button{
+                        font-size: 14px;
                     }
                 }
             }

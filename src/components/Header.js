@@ -1,35 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../images/logo.svg'
 import HamMenu from '../images/icon-hamburger.svg'
 import Illustration from '../images/illustration-working.svg'
 
 function Header() {
+
+    const [toggle, setToggle] = useState(false)
+
+    const menuHandle = () =>{
+        setToggle(!toggle)
+    }
+
   return (
     <header>
-        
-            <nav>
-                <div className="flex-left">
-                    <div className="logoHam-wrapper">
-                        <div className="logoWrapper">
-                            <img src={Logo} alt="header logo" className="logo"/>
-                        </div> 
-                        <div className="hamMenuWrapper">
-                            <img src={HamMenu} alt="hamburger Menu" className="hamMenu"/>
-                        </div> 
+            <div className="close">
+                <nav>
+                    <div className="flex-left">
+                        <div className="logoHam-wrapper">
+                            <div className="logoWrapper">
+                                <img src={Logo} alt="header logo" className="logo"/>
+                            </div> 
+                            <div className="hamMenuWrapper">
+                                <img src={HamMenu} alt="hamburger Menu" className="hamMenu" onClick={menuHandle}/>
+                            </div> 
+                        </div>
+                    
+                        <ul className="items">
+                            <li className="item">Features</li>
+                            <li className="item">Pricing</li>
+                            <li className="item">Resources</li>
+                        </ul>
                     </div>
-                
-                    <ul className="items">
-                        <li className="item">Features</li>
-                        <li className="item">Pricing</li>
-                        <li className="item">Resources</li>
-                    </ul>
-                </div>
-                <div className="logSign-wrapper">
-                    <span className="login">Login</span>
-                    <span className="sign-up">Sign Up</span>
-                </div>
-                
-            </nav>
+                    <div className="logSign-wrapper">
+                        <span className="login">Login</span>
+                        <span className="sign-up">Sign Up</span>
+                    </div>
+                </nav>
+            </div>
             <div className="heading-wrapper">
                 <div className="heading">
                     <h1>More than just shorter links</h1>

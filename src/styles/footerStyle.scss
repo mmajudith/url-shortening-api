@@ -1,0 +1,73 @@
+footer {
+	width: 100%;
+	height: $hundred;
+	margin: $auto;
+	background-color: $VeryDarkViolet;
+	.footer-wrapper {
+		width: $ninety;
+		height: $hundred;
+		margin: $auto;
+		padding: 60px 0px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		p {
+			color: #fff;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+		li {
+			margin-bottom: 5px;
+			&:hover {
+				color: $Cyan;
+				cursor: $pointer;
+			}
+		}
+		.icons-wrapper {
+			.icon {
+				margin-left: 20px;
+				&:hover {
+					cursor: $pointer;
+					color: crimson;
+				}
+			}
+		}
+	}
+}
+
+@include mQ(768px) {
+	footer {
+		.footer-wrapper {
+			flex-direction: column;
+			justify-content: center;
+            align-items: center;
+            .footer-logo-wrapper{
+                margin-bottom: 20px;
+            }
+            .features,
+            .resources,
+            .company{
+                text-align: center;
+                margin-bottom: 20px;
+                p {
+                    margin-bottom: 20px;
+                }
+                ul{
+                    text-align: center;
+                }
+            }
+			.icons-wrapper {
+                text-align: center;
+                margin-top: 20px;
+                .icon {
+                    margin-left: 0px;
+                    padding-left: 20px;
+                    &:hover {
+                        cursor: $pointer;
+                        color: crimson;
+                    }
+                }
+			}
+		}
+	}
+}

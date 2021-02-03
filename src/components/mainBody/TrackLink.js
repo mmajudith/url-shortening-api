@@ -1,13 +1,13 @@
-import React from 'react'
-import Brand from '../../images/icon-brand-recognition.svg'
-import DetRecord from '../../images/icon-detailed-records.svg'
-import FullyCustom from '../../images/icon-fully-customizable.svg'
+import React from 'react';
+import Brand from '../../images/icon-brand-recognition.svg';
+import DetRecord from '../../images/icon-detailed-records.svg';
+import FullyCustom from '../../images/icon-fully-customizable.svg';
 
 function TrackLink() {
   return (
-    <div>
+    <div className="trackLink-wrapper">
 
-      <div>
+      <div className="center">
         <h2> Advanced Statistics</h2>
         <p>
           Track how your links are performing across the web with our 
@@ -15,9 +15,10 @@ function TrackLink() {
         </p>
       </div>
 
-      <div>
-        <div>
-          <div>
+      <div className="flex">
+
+        <div className="brand-wrapper">
+          <div className="brand-icon">
             <img src={Brand} alt="brand recognition icon"/>
           </div>
           <h3>Brand Recognition</h3>
@@ -26,9 +27,10 @@ function TrackLink() {
             mean a thing. Branded links help instil confidence in your content.
           </p>
         </div>
-        <div>
-          <div>
-            <img src={DetRecord} alt="brand recognition icon"/>
+
+        <div className="detailed-wrapper">
+          <div className="detailed-icon">
+            <img src={DetRecord} alt="detailed records icon"/>
           </div>
           <h3>Detailed Records</h3>
           <p>
@@ -36,9 +38,10 @@ function TrackLink() {
             people engage with your content helps inform better decisions.
           </p>
         </div>
-        <div>
-          <div>
-            <img src={FullyCustom} alt="brand recognition icon"/>
+
+        <div className="customize-wrapper">
+          <div className="customize-icon">
+            <img src={FullyCustom} alt="fully customizable icon"/>
           </div>
           <h3>Fully Customizable</h3>
           <p>
@@ -46,6 +49,7 @@ function TrackLink() {
             links, supercharging audience engagement.
           </p>
         </div>
+
       </div>
     </div>
   )
