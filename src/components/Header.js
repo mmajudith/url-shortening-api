@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <header>
-            <div className="close">
+            <div className="open">
                 <nav>
                     <div className="flex-left">
                         <div className="logoHam-wrapper">

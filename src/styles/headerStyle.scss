@@ -127,6 +127,71 @@ header{
                 }
             }
         }
+
+        .open{
+            nav{
+                flex-direction: column;
+                .flex-left{
+                    flex-direction: column;
+                    .logoHam-wrapper{
+                        width: 100%;
+                        margin: $auto;
+                        margin-bottom: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        .hamMenuWrapper{
+                            display: block;
+                        }
+                    }
+                    .items{
+                        width: 100%;
+                        margin: auto auto;
+                        text-align: center;
+                        background-color: $DarkViolet;
+                        padding: 20px 0px;
+                        color: #FFF;
+                        border-radius: 10px 10px 0px 0px;
+                        .item{
+                            float: none;
+                            width: 20%;
+                            margin: auto auto;
+                            padding: 15px 0px;
+                            &:hover{
+                                color: $Cyan;
+                            }
+                        }
+                    }
+                }
+                .logSign-wrapper{
+                    text-align: center;
+                    background-color: $DarkViolet;
+                    padding: 8px 0px;
+                    padding-bottom: 40px;
+                    color: #FFF;
+                    border-radius: 0px 0px 10px 10px;
+                    margin-top: 0%;
+                    .login{
+                        margin-right: 0px;
+                        padding: 25px 0px;
+                        display: block;
+                        width: 90%;
+                        margin: auto auto;
+                        border-top: 1px solid $Gray;
+                        &:hover{
+                            color: $Cyan;
+                        }
+                    }
+                    .sign-up{
+                        width: 80%;
+                        margin: auto auto;
+                        padding: 8px 5%;
+                        display: block;
+                    }
+                }
+            }
+        }
+
         .heading-wrapper{
             flex-direction: column-reverse;
             justify-content: center;
