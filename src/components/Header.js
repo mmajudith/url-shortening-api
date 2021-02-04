@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <header>
-            <div className="open">
+            <div className={!toggle ? "close" : "open"}>
                 <nav>
                     <div className="flex-left">
                         <div className="logoHam-wrapper">
