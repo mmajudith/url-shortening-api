@@ -50,7 +50,7 @@
                 background-color: $VeryDarkBlue;
                 padding: 20px;
                 position: absolute;
-                top: -18%;
+                top: -38px;
             }
         }
         .detailed-wrapper{
@@ -85,8 +85,9 @@
                 .brand-icon,
                 .detailed-icon,
                 .customize-icon{
-                    top: -22%;
-                    left: 40%;
+                    position: none;
+                    text-align: center;
+                    left: 38%;
                 
                 }
             }

@@ -36,22 +36,22 @@ function Header() {
                         <span className="sign-up">Sign Up</span>
                     </div>
                 </nav>
-            </div>
-            <div className="heading-wrapper">
-                <div className="heading">
-                    <h1>More than just shorter links</h1>
-                    <p>Build your brand’s recognition and get detailed insights 
-                        on how your links are performing.
-                    </p>
-                    <div className="get-started">
-                        <span>Get Started</span>
+            
+                <div className="heading-wrapper">
+                    <div className="heading">
+                        <h1>More than just shorter links</h1>
+                        <p>Build your brand’s recognition and get detailed insights 
+                            on how your links are performing.
+                        </p>
+                        <div className="get-started">
+                            <span>Get Started</span>
+                        </div>
+                    </div>
+                    <div className="work-illust-wrapper">
+                        <img src={Illustration} alt="working illustration" className="illust"/>
                     </div>
                 </div>
-                <div className="work-illust-wrapper">
-                    <img src={Illustration} alt="working illustration" className="illust"/>
-                </div>
             </div>
-        
     </header>
   )
 }

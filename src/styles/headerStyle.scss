@@ -92,7 +92,7 @@ header{
         }
         .work-illust-wrapper{
             width: 50%;
-            margin-right: -17%;
+            margin-right: 0%;
             .illust{
                 width: 100%;
             }
@@ -104,6 +104,9 @@ header{
     header{
         position: relative;
         .close{
+            width: 100%;
+            height: 100%;
+            margin: $auto;
             nav{
                 flex-direction: column;
                 .flex-left{
@@ -126,16 +129,17 @@ header{
                     display: none;
                 }
             }
+            @include heading;
         }
 
         .open{
             width: 100%;
             margin: $auto;
-            position: absolute;
-            top: -13%;
-            z-index: 1;
+            position: relative;
             nav{
                 flex-direction: column;
+                position: relative;
+                z-index: 1;
                 .flex-left{
                     flex-direction: column;
                     .logoHam-wrapper{
@@ -154,7 +158,7 @@ header{
                         margin: auto auto;
                         text-align: center;
                         background-color: $DarkViolet;
-                        padding: 20px 0px;
+                        padding: 10px 0px;
                         color: #FFF;
                         border-radius: 10px 10px 0px 0px;
                         .item{
@@ -172,13 +176,13 @@ header{
                     text-align: center;
                     background-color: $DarkViolet;
                     padding: 0px 0px;
-                    padding-bottom: 40px;
+                    padding-bottom: 35px;
                     color: #FFF;
                     border-radius: 0px 0px 10px 10px;
                     margin-top: 0%;
                     .login{
                         margin-right: 0px;
-                        padding: 25px 0px;
+                        padding: 10px 0px;
                         padding-top: 33px;
                         display: block;
                         width: 90%;
@@ -196,40 +200,11 @@ header{
                     }
                 }
             }
-        }
-
-        .heading-wrapper{
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            top: 10px;
-            z-index: 0;
-            .heading{
-                width: 100%;
-                text-align: center;
-                h1{
-                    font-size: 45px;
-                    width: 100%;
-                    line-height: 40px;
-                }
-                p{
-                    width: 100%;
-                    margin-top: 15px;
-                }
-                .get-started{
-                    margin-top: 40px;
-                    span{
-                        padding: 8px 25px;
-                    }
-                }
-            }
-            .work-illust-wrapper{
-                width: 100%;
-                margin-right: 0%;
-                .illust{
-                    width: 100%;
-                }
+            @include heading;
+            .heading-wrapper{
+                position: relative;
+                margin-top: -330px;
+                z-index: 0;
             }
         }
     }

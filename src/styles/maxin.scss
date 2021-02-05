@@ -3,3 +3,38 @@
         @content;
     }    
 }
+
+@mixin heading {
+    
+    .heading-wrapper{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .heading{
+            width: 100%;
+            text-align: center;
+            h1{
+                font-size: 45px;
+                width: 100%;
+                line-height: 40px;
+            }
+            p{
+                width: 100%;
+                margin-top: 15px;
+            }
+            .get-started{
+                margin-top: 40px;
+                span{
+                    padding: 8px 25px;
+                }
+            }
+        }
+        .work-illust-wrapper{
+            width: 100%;
+            margin-right: 0%;
+            .illust{
+                width: 100%;
+            }
+        }
+    }
+}
